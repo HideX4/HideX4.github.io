@@ -1,7 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <header>
+    <nav>
+      <h1>John Doe</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Hello, I'm John</h2>
+    <p>A web developer passionate about clean design and useful code.</p>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I'm a full-stack developer with a love for problem-solving and modern web technologies.</p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Project One</h3>
+        <p>Description of project one.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project Two</h3>
+        <p>Description of project two.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 John Doe</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
