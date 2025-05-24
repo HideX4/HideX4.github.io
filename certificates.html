@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filip Šarík - Certificates</title>
+  <link rel="stylesheet" href="certificates.css">
+  <script src="certificates.js" defer></script>
+</head>
+<body>
+  <img class="image-gradient" src="gradient.png" alt="gradient">
+  <div class="layer-blur"></div>
+  
+  <spline-viewer class="galaxy" url="https://prod.spline.design/fDKngXNLqnUQ7Ogg/scene.splinecode"></spline-viewer>
+
+  <div class="container">
+    <header>
+      <h1 class="logo">Filip Šarík Portfolio</h1>
+      <nav>
+        <ul class="nav-list">
+          <a href="index.html">Home</a>
+          <a href="#">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="certificates.html">Certificates</a>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="certificates-layout">
+        <div class="sidebar">
+          <h1 class="page-title">Certificates</h1>
+          <div class="categories-container">
+            <div class="category-item active" data-category="powerbi">
+              Power BI
+            </div>
+            <div class="category-item" data-category="python">
+              Python
+            </div>
+            <div class="category-item" data-category="sql">
+              SQL
+            </div>
+            <div class="category-item" data-category="linkedin">
+              LinkedIn
+            </div>
+          </div>
+        </div>
+
+        <div class="content-area">
+          <div class="certificate-display">
+            <div class="certificate-header">
+              <h2 class="current-category-title">Power BI Certificates</h2>
+              <div class="certificate-counter">
+                <span id="currentIndex">1</span> / <span id="totalCount">3</span>
+              </div>
+            </div>
+            
+            <div class="certificate-viewer">
+              <button class="nav-btn prev-btn" id="prevBtn">&#8249;</button>
+              <div class="certificate-image-container">
+                <img id="certificateImage" src="certificates/powerbi/cert1.jpg" alt="Certificate" />
+              </div>
+              <button class="nav-btn next-btn" id="nextBtn">&#8250;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.96/build/spline-viewer.js"></script>
+  <div class="overlay"></div>
+</body>
+</html>

@@ -1,61 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <nav>
-      <h1>John Doe</h1>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <img class="image-gradient" src="gradient.png" alt="gradient">
+  <div class="layer-blur"></div>
 
-  <section class="hero">
-    <h2>Hello, I'm John</h2>
-    <p>A web developer passionate about clean design and useful code.</p>
-  </section>
+    <spline-viewer class="galaxy" url="https://prod.spline.design/fDKngXNLqnUQ7Ogg/scene.splinecode"></spline-viewer>
 
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>I'm a full-stack developer with a love for problem-solving and modern web technologies.</p>
-  </section>
-
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>Project One</h3>
-        <p>Description of project one.</p>
+  <div class="container">
+    <header>
+      <h1 class="logo">Filip Šarík Portfolio</h1>
+      <nav>
+        <ul class="nav-list">
+          <a href="index.html">Home</a>
+          <a href="#">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="certificates.html">Certificates</a>
+        </ul>
+      </nav>
+    </header>
+    <main> 
+      <div class="content">
+        <div class="profile-section">
+          <div class="profile-image">
+            <img src="pfp.jpg" alt="Profile Picture">
+          </div>
+          <h2 class="profile-name">Hi, I'm Filip</h2>
+          <p class="profile-tagline">Junior Data Scientist | Junior Data Engineer | Junior Data Analyst</p>
+        </div>
+        <div class="tag-box">
+        </div>
       </div>
-      <div class="project-card">
-        <h3>Project Two</h3>
-        <p>Description of project two.</p>
+    </main>
+
+    <section class="about-section">
+      <div class="about-container">
+        <h2 class="about-title">About Me</h2>
+        <p class="about-description">
+          I'm a passionate developer with experience in various programming languages and data science techniques. 
+          I love creating elegant solutions to complex problems and continuously learning new technologies.
+        </p>
+        
+        <div class="skills-container">
+          <div class="skill-box">
+            <h3 class="skill-title">Programming</h3>
+            <div class="tags-wrapper">
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">HTML/CSS</span>
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">Scikit-learn</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">Git</span>
+            </div>
+          </div>
+          
+          <div class="skill-box">
+            <h3 class="skill-title">Data Science</h3>
+            <div class="tags-wrapper">
+              <span class="skill-tag">Machine Learning</span>
+              <span class="skill-tag">Data Analysis</span>
+              <span class="skill-tag">TensorFlow</span>
+              <span class="skill-tag">pandas</span>
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">Data Visualization</span>
+              <span class="skill-tag">Statistics</span>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <form id="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 John Doe</p>
-  </footer>
-
-  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.96/build/spline-viewer.js"></script>
+  <div class="overlay"></div>
 </body>
 </html>
